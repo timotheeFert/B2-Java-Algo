@@ -7,7 +7,8 @@ public class AppComparerJoueurs {
 		Joueur jr2 = new Joueur(28, "Parker", "France", 30);
 		System.out.println("Premier joueur : " + jr1);
 		System.out.println("Second joueur : " + jr2);
-		
+
+		System.out.println(jr1==jr2);
 		System.out.println(jr1.equals(jr2));
 	}
 }
