@@ -1,1 +1,4 @@
-# B2-Java-Algo
+1.2/ Lors de l'évaluation de l'expression jr1 == jr2, la console nous affiche que ces false puisqu’elle compare les objets qui les représentent et eux sont, sont bien différents. ref memoires diff
+1.3/ Lors de l’évaluation de cette expression, la console nous affiche true puisque cette méthode compare les valeurs des attributs qui eux, sont bien égaux.                      same  
+1.6/ Lors de l'évaluation de l'expression jr1 == jr2, la console nous affiche false puisqu’elle compare les objets qui les représentent et eux sont, sont bien différents.         rien change 
+1.7/ Lors de l’évaluation de cette expression, la console nous affiche true puisque cette méthode compare les valeurs des attributs qui eux, sont bien égaux.                      vérifie le num des 2 joueurs et dans ce cas oui
