@@ -12,10 +12,13 @@ Question 1.9/ La methode permet de vérifier quel joueur a le plus de victoire.
 
 Question 2.2/ 
 
-System.out.println( "\nListe triée :\n" ) ; Collections.sort(joueurs, Comparator.comparingInt(Joueur::getNbVictoires)); System.out.println( joueurs ) ; 
-
-	System.out.println( "\nCelui qui a remporté le moins de victoires :\n" );
-	System.out.println(joueurs.get(0));
+System.out.println( "\nListe triée:\n" ) ;
+	Collections.sort(joueurs, Comparator.comparingInt(Joueur::getNbVictoires));		
+	System.out.println( joueurs ) ;
+		
+			
+System.out.println( "\nLe joueur ayant le moins de victoires est:\n" );
+System.out.println(joueurs.get(0));
 
 Question 2.3/
 
