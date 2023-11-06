@@ -1,23 +1,26 @@
 package fr.gns.app;
 
-	class Joueur {
-		private int numero ;
-		private String nom ;
-		private String pays ;
-		private int nbVictoires = 0 ;
+import java.util.Objects;
+
+public class Joueur {
+	private int numero ;
+	private String nom ;
+	private String pays ;
+	private int nbVictoires = 0 ; // Nombre de victoires remportées
 	public Joueur( int numero , String nom , String pays ){
-		super() ;
-		this.numero = numero ;
-		this.nom = nom ;
-		this.pays = pays ;
-		}
-	public Joueur( int numero , String nom , String pays , int nbVictoires ){
-		super() ;
-		this.numero = numero ;
-		this.nom = nom ;
-		this.pays = pays ;
-		this.nbVictoires = nbVictoires ;
+	super() ;
+	this.numero = numero ;
+	this.nom = nom ;
+	this.pays = pays ;
 	}
+	public Joueur( int numero , String nom , String pays , int nbVictoires ){
+	super() ;
+	this.numero = numero ;
+	this.nom = nom ;
+	this.pays = pays ;
+	this.nbVictoires = nbVictoires ;
+	}
+	
 	public int getNumero() {
 		return numero;
 	}
@@ -43,21 +46,20 @@ package fr.gns.app;
 		this.nbVictoires = nbVictoires;
 	}
 	
-	public String toString() {
-		return "Joueur [numero=" + numero + ", nom=" + nom + ", pays=" + pays + ", nbVictoires=" + nbVictoires + "]";
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Joueur other = (Joueur) obj;
+		return nbVictoires == other.nbVictoires && Objects.equals(nom, other.nom) && numero == other.numero
+				&& Objects.equals(pays, other.pays);
 	}
-	public boolean equals(Joueur autreJoueur) {
-        if (this == autreJoueur) {
-            return true; 
-        }
-
-        if (autreJoueur == null) {
-            return false; 
-        }
-
-        return numero == autreJoueur.numero
-                && nbVictoires == autreJoueur.nbVictoires
-                && nom == autreJoueur.nom
-                && pays == autreJoueur.pays;
-  }
+	
+	public String toString() {
+		return "numero = " + numero + ", nom = " + nom + ", pays = " + pays + ", nbVictoires = " + nbVictoires + "\n";
+	}
+	
 }
