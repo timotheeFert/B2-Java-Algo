@@ -38,6 +38,6 @@ ComparateurNbVictoires :
 
 public int compare(Joueur o1, Joueur o2) { if (o1.getNbVictoires() > o2.getNbVictoires()) { return 1; } else if (o1.getNbVictoires() == o2.getNbVictoires()) { return 0; } else { return -1; } }
 
-Question 3.2/ La méthode Indexof fonctionne pas car elle a besoin de la méthode equals pour fonctionner, une fois que l'on a rajouter cette méthode , la méthode renvoie bien l'indice demander
+Question 3.2/ La méthode Indexof ne fonctionne pas puisqu'elle a besoin de la méthode equals pour fonctionner. Il suffit d'ajouter cette méthode pour que la méthode renvoie l'indice demandé.
 
-question 3.4/ La méthode Indexof ne fonctionne pas car la méthode equals ne marche pas , on la regenère automatiquement et la fonction Indexof foctionne bien
+question 3.4/ La méthode Indexof ne fonctionne pas car la méthode equals ne marche pas, on la regenère automatiquement et la fonction Indexof foctionne bien.
