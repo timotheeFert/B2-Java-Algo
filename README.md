@@ -1,1 +1,1 @@
-B2-JAVA-ALGO
+B2-Java-Algo
