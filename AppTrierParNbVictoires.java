@@ -26,12 +26,12 @@ public class AppTrierParNbVictoires {
 			System.out.println( joueur ) ;
 		}
 		
-		System.out.println( "\nListe triée des joueurs :\n" ) ;
+		System.out.println( "\nListe triée:\n" ) ;
 			Collections.sort(joueurs, Comparator.comparingInt(Joueur::getNbVictoires));		
 			System.out.println( joueurs ) ;
 		
 			
-		System.out.println( "\nCelui qui a remporté le moins de victoires :\n" );
+		System.out.println( "\nLe joueur ayant le moins de victoires est:\n" );
 		System.out.println(joueurs.get(0));
 		
 	}
