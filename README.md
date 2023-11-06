@@ -24,6 +24,7 @@ public static void sort(List joueurs) {
 Collections.sort(joueurs, Comparator.comparingInt(Joueur::getNbVictoires));
 
 }
+
 Question 2.5/
 
 AppTrierParNbVictoires :
