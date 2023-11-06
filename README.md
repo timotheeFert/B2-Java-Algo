@@ -1,12 +1,12 @@
 # DM Java – Collections et algorithmes
 
-Question 1.2/ Lors de l'évaluation de cette expression, le résultat retourné est "false" car l'opérateur "==" ne compare pas le contenue mais les références des objets qui sont bien différentes.
+Question 1.2/ Lors de l'évaluation de cette expression, le résultat retourné est "false" car cet opérateur ne compare pas le contenue mais les références des objets qui sont bien différentes.
 
 Question 1.3/ Lors de l'évaluation de cette expression, le résultat retourné est "false" puisque les 2 joueurs sont différents.
 
 Question 1.6/ Rien n'a changé depuis la question 1.2, le résultat est donc le même.
 
-Question 1.7/ Lors de l'évaluation de cette expression, le résultat retourné est "false" puisque la méthode equals a été surchargé et compare les numero des joueurs qui eux, sont identiques.
+Question 1.7/ Lors de l'évaluation de cette expression, le résultat retourné est "true" puisque la méthode equals a été surchargé et compare les numero des joueurs qui eux, sont identiques.
 
 Question 1.9/ La methode permet de vérifier quel joueur a le plus de victoire.
 
